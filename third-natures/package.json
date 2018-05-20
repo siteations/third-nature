@@ -3,18 +3,21 @@
   "version": "1.0.0",
   "description": "This sample application uses the [Express](https://expressjs.com/) framework and [Bootstrap](http://getbootstrap.com/) to build a simple, scalable customer signup form that is deployed to [AWS Elastic Beanstalk](http://aws.amazon.com/elasticbeanstalk/). The application stores data in [Amazon DynamoDB](http://aws.amazon.com/dynamodb/) and publishes notifications to the [Amazon Simple Notification Service (SNS)](http://aws.amazon.com/sns/) when a customer fills out the form.",
   "main": "app.js",
-  "author": "",
+  "author": "meg studer",
   "license": "ISC",
   "dependencies": {
-    "ejs": "latest",
     "aws-sdk": "latest",
-    "express": "latest",
-    "body-parser": "latest",
     "axios": "^0.18.0",
     "bluebird": "^3.5.1",
+    "body-parser": "latest",
     "bootstrap": "^4.1.1",
+    "ejs": "latest",
+    "express": "latest",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.3"
+    "popper.js": "^1.14.3",
+    "react": "^16.3.2",
+    "react-router": "^4.2.0",
+    "react-waypoint": "^8.0.1"
   },
   "devDependencies": {
     "css-loader": "^0.28.11",
@@ -29,7 +32,7 @@
     "xml-loader": "^1.2.1"
   },
   "scripts": {
-  	"test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "start": "webpack -w & nodemon --watch server -e js,html app.js",
     "build": "webpack"

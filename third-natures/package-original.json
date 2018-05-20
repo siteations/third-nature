@@ -1,6 +1,7 @@
 {
   "name": "third-natures",
   "version": "0.0.1",
+  "description": "so to get the entire structure to work on AWS, create zip internally and then run 'zip -d Archive.zip __MACOSX/\*' from CLI. or else weird things happen from the .ebextensions files. Also switch out the node npm start. - 'node app.js' as opposed to the webpack: 'webpack -w & nodemon --watch server -e js,html app.js' ",
   "private": true,
   "main": "./src/app.js",
   "dependencies": {
@@ -28,7 +29,7 @@
   },
   "scripts": {
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
+    "start": "webpack -w & nodemon --watch server -e js,html app.js",
     "build": "webpack"
   }
 }

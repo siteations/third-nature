@@ -33,9 +33,9 @@ if (cluster.isMaster) {
     AWS.config.region = process.env.REGION
 
     //var sns = new AWS.SNS();
-    var ddb = new AWS.DynamoDB();
+    //var ddb = new AWS.DynamoDB();
 
-    var ddbTable =  process.env.STARTUP_SIGNUP_TABLE;
+    //var ddbTable =  process.env.STARTUP_SIGNUP_TABLE;
     //var snsTopic =  process.env.NEW_SIGNUP_TOPIC;
     var app = express();
 
